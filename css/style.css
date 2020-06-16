@@ -1,22 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 body {
-    background-color: aqua;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    background-color: azure;
+    color: white;
 }
 
 /*------------ Device ------------*/
 
-#inner-interface {
+#game-unit {
     background-color: grey;
-    height: 100px;
-    width: 100px;
+    height: 600px;
+    width: 600px;
     border-radius: 50%;
-    margin: 10px;
-
+    border: solid;
+    border-width: 25px;
+    border-color: black;
+    margin-top: 30px;
+    margin-left: 150px;
+    position: relative;
 }
 
-#game-unit {
-    background-color: black;
+#inner-interface {
+    background-color: darkslategrey;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 10px;
+    border-color: black;
+    margin-top: 20%;
+    margin-left: 20%;
+    position: center;
+}
+
+.logo {
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    color: white;
 }
 
 /*------------ Buttons ------------*/
