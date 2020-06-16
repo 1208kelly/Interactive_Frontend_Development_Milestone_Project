@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+body {
+    background-color: aqua;
+}
+
+/*------------ Device ------------*/
+
+#inner-interface {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+#game-unit {
+    background-color: black;
+}
+
+/*------------ Buttons ------------*/
+
+#red-button {
+    background-color: red;
+}
+
+#blue-button {
+    background-color: blue;
+} 
+
+#yellow-button {
+    background-color: yellow;
+} 
+
+#green-button {
+    background-color: green;
+}
+
