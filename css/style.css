@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700|Orbitron:100,200,300,400,500,600,700');
 
 body {
     background-color: #f0ffff;
@@ -86,13 +86,13 @@ body {
 }
 
 #round-counter {
-    font-family: "Roboto", sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-size: 20px;
     height: 30px;
     width: 50px;
     display: inline-block;
     background: #1d1d1d;
-    color: #aa0000;
+    color: #cf0000;
     border: solid;
     border-width: 2px;
     border-color: #585858;
