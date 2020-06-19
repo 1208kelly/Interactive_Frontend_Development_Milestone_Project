@@ -1,26 +1,32 @@
 //------------ Variables ------------//
 
-let start = true;
-
 let lightUpOrder = [];
 
-let lightFlash = [];
+let playerLightUpOrder =[];
 
-let gameTurn;
+let lightFlash;
 
 let playerTurn;
 
-let roundCounter = document.querySelector("#round-counter");
+let good;
 
-let redButton = document.querySelector("#red-button");
+let gameTurn;
 
-let blueButton = document.querySelector("#blue-button");
+let intervalId;
 
-let yellowButton = document.querySelector("#yellow-button");
+let sound = true;
 
-let greenButton = document.querySelector("#green-button");
+let winGame;
 
-let startButton = document.querySelector("#start-button");
+let redButton = document.getElementById("red-button");
+
+let blueButton = document.getElementById("blue-button");
+
+let yellowButton = document.getElementById("yellow-button");
+
+let greenButton = document.getElementById("green-button");
+
+let startButton = document.getElementById("start-button");
 
 //------------ Start Button ------------//
 
@@ -35,7 +41,7 @@ function pressStart() {
         powerOn = true;
     };
     if (powerOn) {
-    roundCounter.innerHTML = "-";
+    roundCounter.innerHTML = "1";
     startButton.style.borderColor = "white";
     startButton.style.backgroundColor = "#707070";
     redButton.style.backgroundColor = "red";
@@ -51,28 +57,53 @@ function pressStart() {
     }
 };
 
-function playGame() {
-    win = false;
-    lightUpOrder = [];
-    playerOrder = [];
-    flash = 0;
-    intervalId = 0;
-    turn = 1;
-    turnCounter.innerHTML = 1;
-    good = true;
-    for (var i = 0; i < 20; i++) {
-         order.push(Math.floor(Math.random() * 4) + 1);
-     }
-    compTurn = true;
-
-    intervalId = setInterval(gameTurn, 800);
-};
-
 function lightsOff() {
     redButton.style.backgroundColor = "darkred";
     blueButton.style.backgroundColor = "darkblue";
     yellowButton.style.backgroundColor = "goldenrod";
     greenButton.style.backgroundColor = "darkgreen";
+};
+
+//------------ Counter ------------//
+
+let roundCounter = document.querySelector("#round-counter");
+
+function playGame() {
+    winGame = false;
+    lightUpOrder = [];
+    playerOrder = [];
+    lightFlash = 0;
+    intervalId = 0;
+    turn = 1;
+    good = true;
+    for (var i = 0; i < 20; i++) {
+         lightUpOrder.push(Math.floor(Math.random() * 4) + 1);
+     }
+    gameTurn = true;
+
+    intervalId = setInterval(gameRound, 1000);
+};
+
+function gameRound() {
+    on = false;
+
+    if (lightFlash == turn) {
+        clearInterval(intervalId);
+        gameTurn = false;
+        LightsOff();
+        on = true;
+    }
+
+    if (gameTurn) {
+        setTimeout(() => {
+            if (lightUpOrder[lightFlash] == 1) red();
+            if (lightUpOrder[lightFlash] == 2) blue();
+            if (lightUpOrder[lightFlash] == 3) yellow();
+            if (lightUpOrder[lightFlash] == 4) green();
+            lightFlash++;
+          }, 500);
+        LightsOff();
+    }
 };
 
 //------------ Red Button ------------//
@@ -90,7 +121,7 @@ blueButton.addEventListener('click', (event) => {
         lightUpOrder.push(2);
         check();
         two();
-        if(!win) {
+        if(!winGame) {
             setTimeout(() => {
                 clearColor();
             }, 300);
@@ -105,7 +136,7 @@ yellowButton.addEventListener('click', (event) => {
         lightUpOrder.push(3);
         check();
         three();
-        if(!win) {
+        if(!winGame) {
             setTimeout(() => {
                 clearColor();
             }, 300);
@@ -120,7 +151,7 @@ greenButton.addEventListener('click', (event) => {
         lightUpOrder.push(4);
         check();
         four();
-        if(!win) {
+        if(!winGame) {
             setTimeout(() => {
                 clearColor();
             }, 300);
