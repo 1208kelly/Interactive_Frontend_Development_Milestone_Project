@@ -6,6 +6,10 @@ let lightUpOrder = [];
 
 let lightFlash = [];
 
+let gameTurn;
+
+let playerTurn;
+
 let roundCounter = document.querySelector("#round-counter");
 
 let redButton = document.querySelector("#red-button");
@@ -32,19 +36,36 @@ function pressStart() {
     };
     if (powerOn) {
     roundCounter.innerHTML = "-";
+    startButton.style.borderColor = "white";
+    startButton.style.backgroundColor = "#707070";
     redButton.style.backgroundColor = "red";
     blueButton.style.backgroundColor = "blue";
     yellowButton.style.backgroundColor = "yellow";
     greenButton.style.backgroundColor = "green";
     playGame();
     } else {
+        roundCounter.innerHTML = "";
+        startButton.style.borderColor = "";
+        startButton.style.backgroundColor = "";
         lightsOff()
     }
 };
 
 function playGame() {
     win = false;
-    
+    lightUpOrder = [];
+    playerOrder = [];
+    flash = 0;
+    intervalId = 0;
+    turn = 1;
+    turnCounter.innerHTML = 1;
+    good = true;
+    for (var i = 0; i < 20; i++) {
+         order.push(Math.floor(Math.random() * 4) + 1);
+     }
+    compTurn = true;
+
+    intervalId = setInterval(gameTurn, 800);
 };
 
 function lightsOff() {
