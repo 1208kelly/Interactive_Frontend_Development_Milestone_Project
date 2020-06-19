@@ -1,3 +1,5 @@
+//------------ Variables ------------//
+
 let start = true;
 
 let lightUpOrder = [];
@@ -16,32 +18,33 @@ let greenButton = document.querySelector("#green-button");
 
 let startButton = document.querySelector("#start-button");
 
+//------------ Start Button ------------//
+
 document.getElementById("start-button").addEventListener("click", pressStart);
 
-function pressStart() {
-    document.getElementById("round-counter").innerHTML = "-";
-    redButton.style.backgroundColor = "red";
-        blueButton.style.backgroundColor = "blue";
-        yellowButton.style.backgroundColor = "yellow";
-        greenButton.style.backgroundColor = "green";
-        playGame();
-}
+let powerOn = false;
 
-                                            
+function pressStart() {
+    if (powerOn) {
+        powerOn = false;
+    } else {
+        powerOn = true;
+    };
+    if (powerOn) {
+    roundCounter.innerHTML = "-";
+    redButton.style.backgroundColor = "red";
+    blueButton.style.backgroundColor = "blue";
+    yellowButton.style.backgroundColor = "yellow";
+    greenButton.style.backgroundColor = "green";
+    playGame();
+    } else {
+        lightsOff()
+    }
+};
 
 function playGame() {
     win = false;
-    lightUpOrder = [];
-    lightFlash = 0;
-    turn = 1;
-    roundCounter.innerHTML = 1;
-    for (var i = 0; i < 20; i++) {
-        lightUpOrder.push(Math.floor(Math.random() * 4) + 1);
-    }
-    compTurn = true;
-
-    intervalId = setInterval(gameTurn, 800);
-    console.log(lightUpOrder);
+    
 };
 
 function lightsOff() {
@@ -51,18 +54,15 @@ function lightsOff() {
     greenButton.style.backgroundColor = "darkgreen";
 };
 
-redButton.addEventListener('click', (event) => {
-    if (on) {
-        lightUpOrder.push(1);
-        check();
-        one();
-        if(!win) {
-            setTimeout(() => {
-                clearColor();
-            }, 300);
-        }
-    }
-});
+//------------ Red Button ------------//
+
+document.getElementById("red-button").addEventListener("click", pressRed);
+
+function pressRed() {
+    lightUpOrder.push(1);
+};
+
+//------------ Blue Button ------------//
   
 blueButton.addEventListener('click', (event) => {
     if (on) {
@@ -76,6 +76,8 @@ blueButton.addEventListener('click', (event) => {
         }
     }
 });
+
+//------------ Yellow Button ------------//
   
 yellowButton.addEventListener('click', (event) => {
     if (on) {
@@ -89,6 +91,8 @@ yellowButton.addEventListener('click', (event) => {
         }
     }
 });
+
+//------------ Green Button ------------//
   
 greenButton.addEventListener('click', (event) => {
     if (on) {
