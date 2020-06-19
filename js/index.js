@@ -1,4 +1,4 @@
-let start = false;
+let start = true;
 
 let lightUpOrder = [];
 
@@ -16,17 +16,18 @@ let greenButton = document.querySelector("#green-button");
 
 let startButton = document.querySelector("#start-button");
 
-startButton.addEventListener("click", function(event) {
-    if (startButton.clicked === true) {
-        on = true;
-        roundCounter.innerHTML = "-";
+document.getElementById("start-button").addEventListener("click", pressStart);
+
+function pressStart() {
+    document.getElementById("round-counter").innerHTML = "-";
+    redButton.style.backgroundColor = "red";
+        blueButton.style.backgroundColor = "blue";
+        yellowButton.style.backgroundColor = "yellow";
+        greenButton.style.backgroundColor = "green";
         playGame();
-    } else {
-        on = false;
-        roundCounter.innerHTML = "";
-        lightsOff();
-    }
-});
+}
+
+                                            
 
 function playGame() {
     win = false;
@@ -49,3 +50,56 @@ function lightsOff() {
     yellowButton.style.backgroundColor = "goldenrod";
     greenButton.style.backgroundColor = "darkgreen";
 };
+
+redButton.addEventListener('click', (event) => {
+    if (on) {
+        lightUpOrder.push(1);
+        check();
+        one();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+  
+blueButton.addEventListener('click', (event) => {
+    if (on) {
+        lightUpOrder.push(2);
+        check();
+        two();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+  
+yellowButton.addEventListener('click', (event) => {
+    if (on) {
+        lightUpOrder.push(3);
+        check();
+        three();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+  
+greenButton.addEventListener('click', (event) => {
+    if (on) {
+        lightUpOrder.push(4);
+        check();
+        four();
+        if(!win) {
+            setTimeout(() => {
+                clearColor();
+            }, 300);
+        }
+    }
+});
+  
