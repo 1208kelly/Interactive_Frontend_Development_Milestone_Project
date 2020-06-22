@@ -86,7 +86,7 @@ function gameRound() {
     if (lightFlash == playerTurn) {
         clearInterval(intervalId);
         gameTurn = false;
-        LightsOff();
+        lightsOff();
         on = true;
     }
 
@@ -98,7 +98,7 @@ function gameRound() {
             if (lightUpOrder[lightFlash] == 4) green();
             lightFlash++;
           }, 500);
-        LightsOff();
+        lightsOff();
     }
 };
 
@@ -122,7 +122,7 @@ function matchOrder() {
         lightFlash = 0;
         playerLightUpOrder = [];
         good = true;
-        intervalId = setInterval(500);
+        intervalId = setInterval(gameRound, 500);
         setTimeout(() => {
             lightsOut();
         }, 1000);
@@ -132,7 +132,7 @@ function matchOrder() {
         playerTurn++;
         playerLightUpOrder = [];
         gameTurn = true;
-        intervalId = setInterval(1000);
+        intervalId = setInterval(gameRound, 1000);
     }
 };
 
