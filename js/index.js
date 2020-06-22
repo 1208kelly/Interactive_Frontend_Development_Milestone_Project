@@ -14,7 +14,7 @@ let gameTurn;
 
 let intervalId;
 
-let sound = true;
+let start = true;
 
 let winGame;
 
@@ -108,53 +108,79 @@ function gameRound() {
 
 //------------ Red Button ------------//
 
-document.getElementById("red-button").addEventListener("click", pressRed);
+function red() {
+    start = true;
+    redButton.style.backgroundColor = "red";
+}
 
-function pressRed() {
-    lightUpOrder.push(1);
-};
+document.getElementById("red-button").addEventListener("click", pressRed => {
+    if (on) {
+        lightUpOrder.push(1);
+        check();
+        one();
+        if(!winGame) {
+            setTimeout(() => {
+                lightsOut();
+            }, 200);
+        }
+    }
+});
 
 //------------ Blue Button ------------//
+
+function blue() {
+    start = true;
+    blueButton.style.backgroundColor = "blue";
+}
   
-blueButton.addEventListener('click', (event) => {
+document.getElementById("blue-button").addEventListener("click", pressBlue => {
     if (on) {
         lightUpOrder.push(2);
         check();
         two();
         if(!winGame) {
             setTimeout(() => {
-                clearColor();
-            }, 300);
+                lightsOut();
+            }, 200);
         }
     }
 });
 
 //------------ Yellow Button ------------//
+
+function yellow() {
+    start = true;
+    yellowButton.style.backgroundColor = "yellow";
+}
   
-yellowButton.addEventListener('click', (event) => {
+document.getElementById("yellow-button").addEventListener("click", pressYellow => {
     if (on) {
         lightUpOrder.push(3);
         check();
         three();
         if(!winGame) {
             setTimeout(() => {
-                clearColor();
-            }, 300);
+                lightsOut();
+            }, 200);
         }
     }
 });
 
 //------------ Green Button ------------//
+function green() {
+    start = true;
+    greenButton.style.backgroundColor = "green";
+}
   
-greenButton.addEventListener('click', (event) => {
+document.getElementById("green-button").addEventListener("click", pressGreen => {
     if (on) {
         lightUpOrder.push(4);
         check();
         four();
         if(!winGame) {
             setTimeout(() => {
-                clearColor();
-            }, 300);
+                lightsOut();
+            }, 200);
         }
     }
 });
