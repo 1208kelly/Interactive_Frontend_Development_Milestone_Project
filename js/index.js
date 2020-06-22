@@ -44,10 +44,6 @@ function pressStart() {
     roundCounter.innerHTML = "1";
     startButton.style.borderColor = "white";
     startButton.style.backgroundColor = "#707070";
-    redButton.style.backgroundColor = "red";
-    blueButton.style.backgroundColor = "blue";
-    yellowButton.style.backgroundColor = "yellow";
-    greenButton.style.backgroundColor = "green";
     playGame();
     } else {
         roundCounter.innerHTML = "";
@@ -114,10 +110,9 @@ function red() {
 }
 
 document.getElementById("red-button").addEventListener("click", pressRed => {
-    if (on) {
-        lightUpOrder.push(1);
-        check();
-        one();
+    if (powerOn) {
+        playerLightUpOrder.push(1);
+        red();
         if(!winGame) {
             setTimeout(() => {
                 lightsOut();
@@ -134,10 +129,9 @@ function blue() {
 }
   
 document.getElementById("blue-button").addEventListener("click", pressBlue => {
-    if (on) {
-        lightUpOrder.push(2);
-        check();
-        two();
+    if (powerOn) {
+        playerLightUpOrder.push(2);
+        blue();
         if(!winGame) {
             setTimeout(() => {
                 lightsOut();
@@ -154,10 +148,9 @@ function yellow() {
 }
   
 document.getElementById("yellow-button").addEventListener("click", pressYellow => {
-    if (on) {
-        lightUpOrder.push(3);
-        check();
-        three();
+    if (powerOn) {
+        playerLightUpOrder.push(3);
+        yellow();
         if(!winGame) {
             setTimeout(() => {
                 lightsOut();
@@ -173,10 +166,9 @@ function green() {
 }
   
 document.getElementById("green-button").addEventListener("click", pressGreen => {
-    if (on) {
-        lightUpOrder.push(4);
-        check();
-        four();
+    if (powerOn) {
+        playerLightUpOrder.push(4);
+        green();
         if(!winGame) {
             setTimeout(() => {
                 lightsOut();
