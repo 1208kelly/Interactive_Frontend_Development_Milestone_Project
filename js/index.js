@@ -14,6 +14,8 @@ let gameTurn;
 
 let intervalId;
 
+let sound = true;
+
 let start = true;
 
 let winGame;
@@ -41,10 +43,13 @@ function pressStart() {
         powerOn = true;
     };
     if (powerOn) {
-    roundCounter.innerHTML = "1";
-    startButton.style.borderColor = "white";
-    startButton.style.backgroundColor = "#707070";
-    playGame();
+        roundCounter.innerHTML = "1";
+        startButton.style.borderColor = "white";
+        startButton.style.backgroundColor = "#707070";
+        let audio = document.getElementById("sound1");
+        audio.play();
+        sound = true;
+        playGame();
     } else {
         roundCounter.innerHTML = "";
         startButton.style.borderColor = "";
@@ -59,6 +64,8 @@ function lightsOff() {
     yellowButton.style.backgroundColor = "goldenrod";
     greenButton.style.backgroundColor = "darkgreen";
 };
+
+debugger;
 
 //------------ Counter ------------//
 
@@ -149,6 +156,9 @@ function gameWinner() {
 //------------ Red Button ------------//
 
 function red() {
+    let audio = document.getElementById("sound2");
+    audio.play();
+    sound = true;
     redButton.style.backgroundColor = "red";
 }
 
@@ -168,6 +178,9 @@ document.getElementById("red-button").addEventListener("click", pressRed => {
 //------------ Blue Button ------------//
 
 function blue() {
+    let audio = document.getElementById("sound3");
+    audio.play();
+    sound = true;
     blueButton.style.backgroundColor = "blue";
 }
   
@@ -187,6 +200,9 @@ document.getElementById("blue-button").addEventListener("click", pressBlue => {
 //------------ Yellow Button ------------//
 
 function yellow() {
+    let audio = document.getElementById("sound4");
+    audio.play();
+    sound = true;
     yellowButton.style.backgroundColor = "yellow";
 }
   
@@ -205,6 +221,9 @@ document.getElementById("yellow-button").addEventListener("click", pressYellow =
 
 //------------ Green Button ------------//
 function green() {
+    let audio = document.getElementById("sound5");
+    audio.play();
+    sound = true;
     greenButton.style.backgroundColor = "green";
 }
   
