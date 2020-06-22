@@ -83,7 +83,7 @@ function playGame() {
 function gameRound() {
     on = false;
 
-    if (lightFlash == turn) {
+    if (lightFlash == playerTurn) {
         clearInterval(intervalId);
         gameTurn = false;
         LightsOff();
