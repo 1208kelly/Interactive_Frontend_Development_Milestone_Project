@@ -23,7 +23,7 @@ body {
     height: 560px;
     width: 560px;
     border-radius: 50%;
-    border: solid;
+    border: double;
     border-width: 3px;
     border-color: #585858;
     margin: auto;
