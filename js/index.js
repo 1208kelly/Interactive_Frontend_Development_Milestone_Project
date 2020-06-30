@@ -1,6 +1,5 @@
 //------------ Variables ------------//
 
-let lightUpOrder = [];
 
 let playerLightUpOrder =[];
 
@@ -14,8 +13,6 @@ let gameTurn;
 
 let intervalId;
 
-let sound = true;
-
 let start = true;
 
 let winGame;
@@ -28,29 +25,27 @@ let yellowButton = document.getElementById("yellow-button");
 
 let greenButton = document.getElementById("green-button");
 
-let startButton = document.getElementById("start-button");
+
 
 //------------ Start Button ------------//
 
+let startButton = document.getElementById("start-button");
+
 document.getElementById("start-button").addEventListener("click", pressStart);
 
-let powerOn = false;
+let powerOn = true;
 
 function pressStart() {
     if (powerOn) {
-        powerOn = false;
-    } else {
         powerOn = true;
-    };
-    if (powerOn) {
-        roundCounter.innerHTML = "1";
         startButton.style.borderColor = "white";
         startButton.style.backgroundColor = "#707070";
         let audio = document.getElementById("sound1");
         audio.play();
-        sound = true;
+        let sound = true;
         playGame();
     } else {
+        powerOn = false;
         roundCounter.innerHTML = "";
         startButton.style.borderColor = "";
         startButton.style.backgroundColor = "";
@@ -71,11 +66,15 @@ debugger;
 
 let roundCounter = document.querySelector("#round-counter");
 
+let lightUpOrder = [];
+
 function playGame() {
     winGame = false;
     lightUpOrder = [];
     playerOrder = [];
     lightFlash = 0;
+    roundCounter.innerHTML = 1;
+    roundCounter++;
     intervalId = 0;
     playerTurn = 1;
     good = true;
@@ -83,7 +82,6 @@ function playGame() {
          lightUpOrder.push(Math.floor(Math.random() * 4) + 1);
     }
     gameTurn = true;
-
     intervalId = setInterval(gameRound, 1000);
 };
 

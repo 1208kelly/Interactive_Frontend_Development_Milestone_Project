@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700|Orbitron:100,200,300,400,500,600,700');
 
 body {
-    background-color: #f0ffff;
+    background-image: url(../images/charcoal-boxes.jpg);
+    height: auto;
+    width: auto;
+    background-repeat: repeat;
     color: #ffffff;
+}
+
+.container {
+    background: transparent;
 }
 
 .row {
@@ -21,9 +28,9 @@ body {
     border-color: #585858;
     margin: auto;
     margin-top: 25px;
-    -webkit-box-shadow: 7px 7px 5px 0px #474747;
-    -moz-box-shadow: 7px 7px 5px 0px #474747;
-    box-shadow: 7px 7px 5px 0px #474747;
+    -webkit-box-shadow: 7px 7px 35px 0px #111111;
+    -moz-box-shadow: 7px 7px 35px 0px #111111;
+    box-shadow: 7px 7px 35px 0px #111111;
     position: relative;
 }
 
