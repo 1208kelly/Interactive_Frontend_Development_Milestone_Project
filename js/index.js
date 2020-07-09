@@ -68,6 +68,7 @@ function playGame() {
     roundCounter.innerHTML = "1";
     intervalId = 0;
     playerTurn = 1;
+    lightflash = 0;
     good = true;
     gameTurn = true;
     intervalId = setInterval(gameRound, 1000);
