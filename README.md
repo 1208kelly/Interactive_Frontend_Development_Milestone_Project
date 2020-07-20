@@ -1,70 +1,87 @@
 Interactive Frontend Development Milestone Project
-My name is Rob Kelly and this is my first User Centric Frontend Development Milestone Project. For this project I have chosen to create a personal portfolio site to help promote myself and my skills and talent to any potential employers or collegues to collaborate on projects together.
 
-I will provide credits for any links or work used.
+One Paragraph of project description goes here
 
-UX
-As stated above, I am creating a personal portfolio for myself. The purpose of this site is to display my skills and value for potential employers as well as possible collegues and other developers that may want to colaborate on future projects.
+## Getting Started
 
-I plan to achieve this by using a minimalist tile approach for a nice clean, easy to use user experience.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-I believe by having a nice, easy to use site like this it will show the user a little bit about who I am and what I can offer if they wish to work with me.
+### Prerequisites
 
-Features
-My personal website is a minimalist approach which I feel gives the user a nice, easy to use yet pleasing to the eye experience. I have added three different sub-pages that the user can navigate to using the menu in the header at the top (or directory at in the footer at the bottom of the site). I have an about me page just giving a brief intoduction into who I am. I also have a work history page to show relevant info on how I got to where I am with coding today. Lastly, I have a contact page where the user can contact me if they require any further info or general queries.
+What things you need to install the software and how to install them
 
-Existing Features
-Feature 1 - Contact page - Allows users to contact me, by having them fill out the contact details and clicking submit.
-Feature 2 - Social icons - Allows any potential employers or collaborators to check out my online presence by clicking any of the social icons at the bottom of the footer on each page.
-Feature 3 - Home page - Allows users to see right away what programming skills I may have to offer, without having to navigate very far into the site.
-Features Left to Implement
-In future I would like to add links to any project work I have done or possibly add a project page.
-Technologies Used
-[JavaScript]
+```
+Give examples
+```
 
-This project uses some JavaScript to operate some features.
-Bootstrap
+### Installing
 
-This project uses Bootstrap as it is a great toolkit for setting up mobile-first web pages.
-JQuery
+A step by step series of examples that tell you how to get a development env running
 
-This project uses JQuery to help assist with Bootstrap.
-Font Awesome
+Say what the step will be
 
-This project uses font awesome to replace the default fonts used.
-Testing
-I have tested my html and css code using the w3c validator with no errors or warnigns to show. I have tested the social links in the footer of each page, no link is broken and works as expected upon my testing. The link has been set to blank as instructed for this project. I will possibly update this at a future date to link to my socal media pages.
+```
+Give the example
+```
 
-I have organised the layout of my code to adjust in different screen sizes, with mobile having the images on the index page the same width, almost the width of the page itself. When increasing to tablet and desktop screens the hero image at the top gets wider while the programming skills images skrink and stick to the center of the screen.
+And repeat
 
-Deployment
-To deploy my project I am using GitHub Pages to host, working from my master branch.
+```
+until finished
+```
 
-To view the deployed code,
+End with an example of getting some data out of the system or using it for a little demo
 
-Go to Rob Kelly's Milestone Project on Github Pages
+## Running the tests
 
-I started by going to github.com and logging into my account.
+Explain how to run the automated tests for this system
 
-Using the settings tab in the upper menu I scrolled down to "Source" in the "Github Pages" section.
+### Break down into end to end tests
 
-By default it was set to none so I selected "Master Branch" and waited for the sie to deploy.
+Explain what these tests test and why
 
-Once complete I clocked the link to make sure that my site was opening in my browser.
+```
+Give an example
+```
 
-To run this code simply,
+### And coding style tests
 
-Go to github.com
-From here using the "clone of download" button, you can download a copy of my porject to your desktop.
-On this same page is also a "Gitpod button", you can use this to view my project in Gitpod.
-Credits
-I must give fair credit to
-Content
-The template for the text used in the "About Me" section was copied from, and then modified to reflect my own description, About Jessica Caldwell
+Explain what these tests test and why
 
-The slide menu bar was used from an online tutorial site w3schools.com
+```
+Give an example
+```
 
-Media
-The photos used in this site were obtained from my personal photos and also from deathtostockphoto.com
-Acknowledgements
-I received inspiration for this project from Jessica Caldwell and also webfx and codrops
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
