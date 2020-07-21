@@ -20,14 +20,14 @@ body {
 
 #game-unit {
     background-color: #000000;
-    height: 560px;
-    width: 560px;
+    height: 90vh;
+    width: 90vh;
     border-radius: 50%;
     border: double;
     border-width: 3px;
     border-color: #585858;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 5vh;
     -webkit-box-shadow: 7px 7px 35px 0px #111111;
     -moz-box-shadow: 7px 7px 35px 0px #111111;
     box-shadow: 7px 7px 35px 0px #111111;
@@ -36,11 +36,11 @@ body {
 
 #inner-interface {
     background-color: #000000;
-    height: 300px;
-    width: 300px;
+    height: 50vh;
+    width: 50vh;
     border-radius: 50%;
     margin: auto;
-    margin-top: 125px;
+    margin-top: 21%;
     align-self: center;
     position: relative;
 }
@@ -48,11 +48,11 @@ body {
 .logo {
     font-family: "Teko", sans-serif;
     font-weight: 400;
-    font-size: 120px;
-    height: 160px;
+    font-size: 22vh;
+    height: 28vh;
     display: block;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 3vh;
     margin: auto;
     color: #ffffff;
 }
@@ -60,52 +60,52 @@ body {
 .start {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 3vh;
     display: inline-block;
-    margin-left: 50px;
-    width: 50px;
+    margin-left: 12vh;
+    width: 7vh;
     text-align: center;
     color: #ffffff;
 }
 
 #start-button {
     background-color: #1d1d1d;
-    height: 35px;
-    width: 35px;
+    height: 7vh;
+    width: 7vh;
     border-radius: 50%;
     outline: none;
     border: solid;
-    border-width: 2px;
+    border-width: .75vh;
     border-color: #585858;
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 55px;
+    margin-top: 2vh;
+    margin-left: 12vh;
   }
 
 .counter {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 3vh;
     display: inline-block;
-    margin-left: 75px;
-    width: 75px;
+    margin-left: 8vh;
+    width: 7vh;
     text-align: center;
     color: #ffffff;
 }
 
 #round-counter {
     font-family: "Orbitron", sans-serif;
-    font-size: 20px;
-    height: 30px;
-    width: 50px;
+    font-size: 4vh;
+    height: 7vh;
+    width: 10vh;
     display: inline-block;
     background: #1d1d1d;
     color: #cf0000;
     border: solid;
-    border-width: 1px;
+    border-width: .5vh;
     border-color: #585858;
-    margin-left: 95px;
-    margin-top: 10px;
+    margin-left: 8vh;
+    margin-top: 2vh;
     text-align: center;
     vertical-align: top;
   }
@@ -114,57 +114,57 @@ body {
 
 #red-button {
     background-color: darkred;
-    height: 250px;
-    width: 250px;
-    border-radius: 0 250px 0 0;
+    height: 43vh;
+    width: 43vh;
+    border-radius: 0 50vh 0 0;
     border-style: solid;
     border-width: 8px;
     border-color: #000000;
-    top: 50%;
+    top: 2%;
     left: 50%;
-    margin: -250px 0px 0px 0px;
+    margin: -0px 0px 0px 0px;
     position: absolute;
 }
 
 #blue-button {
     background-color: darkblue;
-    height: 250px;
-    width: 250px;
-    border-radius: 0 0 250px 0;
+    height: 43vh;
+    width: 43vh;
+    border-radius: 0 0 50vh 0;
     border-style: solid;
     border-width: 8px;
     border-color: #000000;
     top: 50%;
     left: 50%;
-    margin: 0px 0px -250px 0px;
+    margin: 0px 0px 0px 0px;
     position: absolute;
 } 
 
 #yellow-button {
     background-color: goldenrod;
-    height: 250px;
-    width: 250px;
-    border-radius: 0 0 0 250px;
+    height: 43vh;
+    width: 43vh;
+    border-radius: 0 0 0 50vh;
     border-style: solid;
     border-width: 8px;
     border-color: #000000;
     top: 50%;
-    left: 50%;
-    margin: 0px -250px 0px -250px;
+    left: 2%;
+    margin: 0px 0px 0px 0px;
     position: absolute;
 } 
 
 #green-button {
     background-color: darkgreen;
-    height: 250px;
-    width: 250px;
-    border-radius: 250px 0 0 0;
+    height: 43vh;
+    width: 43vh;
+    border-radius: 50vh 0 0 0;
     border-style: solid;
     border-width: 8px;
     border-color: #000000;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0px 0px -250px;
+    top: 2%;
+    left: 2%;
+    margin: 0px 0px 0px 0px;
     position: absolute;
 }
 

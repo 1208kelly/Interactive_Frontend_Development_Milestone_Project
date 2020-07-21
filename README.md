@@ -1,19 +1,26 @@
-# Interactive Frontend Development Milestone Project
+<img src="./images/simon-game-logo.png" style="margin: 0;">
 
-*One or two paragraphs providing an overview of your project.
+# Simon Memory Game 
 
-*Essentially, this part is your sales pitch.
-
-Hi, my name is Rob and this is my Interactive Frontend Development Project.
+Hi, my name is Rob and this is my Interactive Frontend Development Project. For this project
+I have recreated the Simon memory game, complete with interactive functionality to play and try
+to win the game.
+This game is complete with flashing buttons with audio and a round counter to keep track of score.
  
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+This site is designed for anyone just looking for a quick game or brain exercise e.g anyone on a break at work or 
+on a train or bus journey could easily load this up and play a quick game, so long as the user had some sort of
+internet connection to access the site, of course.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+It could also be used as reference for anyone learning to code, as an example of how JS can be implemented to make 
+your code interactive and fun.
+
+I used an image of a Simon game unit, sourced through Google, as a frame of reference for building my HTML/CSS shell.
+This image file is located in the images folder in this project.
+
+I used [Tailor Brands](https://www.tailorbrands.com/lp-home?msclkid=b4972eb141a5103b174571a658f204f1&utm_source=bing&utm_medium=cpc&utm_campaign=UK%20Branded%20-%20E&utm_term=tailor%20brands&utm_content=S_Tailor%20Brands%20UK%20-%20E)
+to aid in the creation of the brand logo.
 
 ## Features
 
