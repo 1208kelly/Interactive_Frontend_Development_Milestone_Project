@@ -23,14 +23,17 @@ I used [Tailor Brands](https://www.tailorbrands.com/lp-home?msclkid=b4972eb141a5
 to aid in the creation of the brand logo.
 I used audio sourced from [SoundJay.com](https:www.soundjay.com/index.html).
 
+I also refered to various FAQ and tutorials on [Stackoverflow.com](https://stackoverflow.com/) and also 
+[W3Schools](https://www.w3schools.com/Js/) and tutorials on Youtube when Tutor support was unavailable or could not assist further.
+
 
 ## Features
 
-The features of the is project are pretty simplistic but designed to demonstarate how JavaScript can take a well designed 
+The features of this project are pretty simplistic but more designed to demonstarate how JavaScript can take a well designed 
 or structured project or site and add a level of interactivity for the end user that makes their experience more enjoyable and memorable (excuse the pun).
 
-I have recreated the memory game, Simon, and incorporated the start button to start up the unit and also a counter so you can keep track of what round you 
-are on, if you are keeping score.
+I have recreated the memory game, Simon, and incorporated the start button to start up the unit and also a counter so the player can keep track of what round they 
+are on, if they are keeping score.
  
 ### Features Left to Implement
 - Other features that I have seen online, but that I have yet to implement in this project, would be a hard mode button. This would enable the user to play the game and if 
@@ -38,31 +41,23 @@ they get one wrong anwer they lose the game and have to start from round one all
 
 ## Technologies Used
 
-*In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+To create this project I did not use any templates as I wanted to build the HTML and CSS myself to get the dimensions of the unit acurate.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+For the JavaScript I referenced from questions asked in sites like Stackoverflow and W3schools. For example, (and I have commented this in my js file) I was 
+having trouble getting the buttons to light up in a random sequence so found a tutorial on [Stackoverflow link](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) 
+and this along with assistence from my mentor got the buttons to light up correctly for me.
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+To test this project I have checked my code using the [W3 Markup Caidation Service](http://validator.w3.org/) along with [jshint](https://jshint.com/).
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+I have adjusted my project so that it has a smooth appearance across the board on computer and tablet or mobile screens. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+I am quite happy with how this project turned out but I have had an issue that, due to time constraints and issues with my computer setting me back and 
+therefore trying to catch up in my course work, I will have to address at a later date. This is issue is that upon the player getting the sequence wrong, 
+the players input is then not recognised. I have reached out to tutor support for help with this issue but I was passed to about 4 different advisors and 
+none of them could actually find the cause and therefore help me with my issue so I had to move on. I have made a note to look into this as I understand that 
+bug fixing is big part of a competent developers role and I will need this knowledge going forward.
 
 ## Deployment
 
@@ -77,13 +72,13 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 
 ## Credits
+- [Stackoverflow link](https://stackoverflow.com/)
+- [W3Schools](https://www.w3schools.com/Js/)
+- [SoundJay.com](https:www.soundjay.com/index.html)
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
-### Media
-- The photos used in this site were obtained from ...
-
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I was inspired to choose this memory game from watching some Python and JS games created on websites and on Youtube.

@@ -59,6 +59,10 @@ let roundCounter = document.querySelector("#round-counter");
 
 let lightUpOrder = [];
 
+// ------- NOTE: I had to look up FAQ's and tutorials and get help from my Tutor support and my Mentor to get this random order to light up correctly ------- //
+// ------- link to FAQ https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array ------- //
+// ------- link to lesson: https://www.w3schools.com/jsref/jsref_random.asp ------- //
+
 function playGame() {
     winGame = false;
     lightUpOrder = [];
