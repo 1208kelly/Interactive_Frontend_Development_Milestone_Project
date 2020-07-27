@@ -26,6 +26,8 @@ I used audio sourced from [SoundJay.com](https:www.soundjay.com/index.html).
 I also refered to various FAQ and tutorials on [Stackoverflow.com](https://stackoverflow.com/) and also 
 [W3Schools](https://www.w3schools.com/Js/) and tutorials on Youtube when Tutor support was unavailable or could not assist further.
 
+I refered to this [Youtube tutorial](https://www.youtube.com/watch?v=n_ec3eowFLQ) from 52:15 for help.
+
 
 ## Features
 
@@ -41,11 +43,12 @@ they get one wrong anwer they lose the game and have to start from round one all
 
 ## Technologies Used
 
-To create this project I did not use any templates as I wanted to build the HTML and CSS myself to get the dimensions of the unit acurate.
+To create this project I did not use any templates as I wanted to build the majority of the HTML and CSS myself to get the dimensions of the unit acurate.
 
 For the JavaScript I referenced from questions asked in sites like Stackoverflow and W3schools. For example, (and I have commented this in my js file) I was 
 having trouble getting the buttons to light up in a random sequence so found a tutorial on [Stackoverflow link](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array) 
 and this along with assistence from my mentor got the buttons to light up correctly for me.
+I also used part of a Youtube tutorial to help me with the round counter number to count up correctly and match up with the players round. [Youtube tutorial](https://www.youtube.com/watch?v=n_ec3eowFLQ).
 
 ## Testing
 
@@ -61,24 +64,15 @@ bug fixing is big part of a competent developers role and I will need this knowl
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+I have deployed my project using Github Pages at this [Github Pages project link:](https://1208kelly.github.io/Interactive_Frontend_Development_Milestone_Project/)
 
 
 ## Credits
 - [Stackoverflow link](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/Js/)
 - [SoundJay.com](https:www.soundjay.com/index.html)
-
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- [Youtube tutorial](https://www.youtube.com/watch?v=n_ec3eowFLQ)
 
 ### Acknowledgements
 
-- I was inspired to choose this memory game from watching some Python and JS games created on websites and on Youtube.
+- I was inspired to choose this memory game from watching some Python and JS games created on websites and in tutorials.

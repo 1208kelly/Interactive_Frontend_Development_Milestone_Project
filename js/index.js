@@ -101,11 +101,15 @@ function gameRound() {
 };
 
 // ------------ Game Operation ------------ //
+
+// ------- Tutorial link: https://www.youtube.com/watch?v=n_ec3eowFLQ from 52:15  to help get the round count number to count up correctly ------- //
   
 function matchOrder() {
     if (playerLightUpOrder[playerLightUpOrder.length - 1] !== lightUpOrder[playerLightUpOrder.length - 1])
         good = false;
   
+// ------- I changed this to length to 4 simply for testing purposes, I understand that this could be set to ay number like 20, as would the standard game be set to ------- //
+
     if (playerLightUpOrder.length == 4 && good) {
         gameWinner();
     }
