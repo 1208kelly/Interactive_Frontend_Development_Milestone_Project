@@ -1,5 +1,7 @@
 // ------------ Variables ------------ //
 
+let powerOn;
+
 let playerLightUpOrder = [];
 
 let lightFlash;
@@ -24,8 +26,6 @@ let winGame;
 let startButton = document.getElementById("start-button");
 
 document.getElementById("start-button").addEventListener("click", pressStart);
-
-let powerOn;
 
 function pressStart() {
     if (powerOn = true) {
@@ -52,8 +52,6 @@ function lightsOff() {
     yellowButton.style.backgroundColor = "goldenrod";
     greenButton.style.backgroundColor = "darkgreen";
 };
-
-debugger;
 
 // ------------ Counter ------------ //
 
@@ -104,7 +102,7 @@ function matchOrder() {
     if (playerLightUpOrder[playerLightUpOrder.length - 1] !== lightUpOrder[playerLightUpOrder.length - 1])
         good = false;
   
-    if (playerLightUpOrder.length == 20 && good) {
+    if (playerLightUpOrder.length == 4 && good) {
         gameWinner();
     }
   

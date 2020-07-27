@@ -21,25 +21,24 @@ This image file is located in the images folder in this project.
 
 I used [Tailor Brands](https://www.tailorbrands.com/lp-home?msclkid=b4972eb141a5103b174571a658f204f1&utm_source=bing&utm_medium=cpc&utm_campaign=UK%20Branded%20-%20E&utm_term=tailor%20brands&utm_content=S_Tailor%20Brands%20UK%20-%20E)
 to aid in the creation of the brand logo.
+I used audio sourced from [SoundJay.com](https:www.soundjay.com/index.html).
+
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The features of the is project are pretty simplistic but designed to demonstarate how JavaScript can take a well designed 
+or structured project or site and add a level of interactivity for the end user that makes their experience more enjoyable and memorable (excuse the pun).
+
+I have recreated the memory game, Simon, and incorporated the start button to start up the unit and also a counter so you can keep track of what round you 
+are on, if you are keeping score.
  
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 ### Features Left to Implement
-- Another feature idea
+- Other features that I have seen online, but that I have yet to implement in this project, would be a hard mode button. This would enable the user to play the game and if 
+they get one wrong anwer they lose the game and have to start from round one all over again.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+*In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
